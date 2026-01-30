@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - WebCraft</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;800;900&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">WebCraft</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Notre <span class="gradient-text">Portfolio</span></h1>
+            <p class="page-subtitle">Découvrez nos réalisations et projets réussis</p>
+        </div>
+    </section>
+
+    <!-- Filtres Portfolio -->
+    <section class="portfolio-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="software">Logiciels</button>
+                <button class="filter-btn" data-filter="video">Vidéo</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid">
+        <div class="container">
+            <div class="projects-grid">
+                
+                <!-- Projet 1 -->
+                <div class="project-card" data-category="web ecommerce">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <span class="project-icon">🛍️</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="project-tag">E-commerce</span>
+                                <span class="project-tag">Web</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>FashionStore</h3>
+                        <p>Boutique en ligne moderne pour vêtements avec système de paiement intégré</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <span class="project-icon">📱</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="project-tag">Mobile</span>
+                                <span class="project-tag">iOS/Android</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>FitTracker</h3>
+                        <p>Application mobile de suivi fitness avec plans d'entraînement personnalisés</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>API REST</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <span class="project-icon">🏢</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="project-tag">Web</span>
+                                <span class="project-tag">Corporate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>TechCorp Solutions</h3>
+                        <p>Site vitrine corporate avec animations et portfolio interactif</p>
+                        <div class="project-tech">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>GSAP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 4 -->
+                <div class="project-card" data-category="software">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                            <span class="project-icon">⚙️</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="project-tag">Logiciel</span>
+                                <span class="project-tag">CRM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>SalesMaster CRM</h3>
+                        <p>Système de gestion client complet avec automatisation des ventes</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 5 -->
+                <div class="project-card" data-category="video">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <span class="project-icon">🎬</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="project-tag">Vidéo</span>
+                                <span class="project-tag">Marketing</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Brand Launch Video</h3>
+                        <p>Vidéo promotionnelle dynamique avec motion design et effets visuels</p>
+                        <div class="project-tech">
+                            <span>Premiere Pro</span>
+                            <span>After Effects</span>
+                            <span>Motion Graphics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 6 -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <span class="project-icon">🍔</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="project-tag">Mobile</span>
+                                <span class="project-tag">Food Delivery</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>QuickFood</h3>
+                        <p>Application de livraison de repas avec tracking en temps réel</p>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>MongoDB</span>
+                            <span>Maps API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 7 -->
+                <div class="project-card" data-category="web ecommerce">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <span class="project-icon">💎</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="project-tag">E-commerce</span>
+                                <span class="project-tag">Luxury</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>LuxuryJewels</h3>
+                        <p>E-commerce haut de gamme pour bijoux avec visualisation 3D</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Three.js</span>
+                            <span>Shopify</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 8 -->
+                <div class="project-card" data-category="software">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                            <span class="project-icon">📊</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="project-tag">Logiciel</span>
+                                <span class="project-tag">Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>DataInsight Pro</h3>
+                        <p>Plateforme d'analyse de données avec visualisations interactives</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>D3.js</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 9 -->
+                <div class="project-card" data-category="video">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                            <span class="project-icon">🎥</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="project-tag">Vidéo</span>
+                                <span class="project-tag">Corporate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Company Profile Video</h3>
+                        <p>Vidéo de présentation d'entreprise avec interviews et b-roll</p>
+                        <div class="project-tech">
+                            <span>4K Video</span>
+                            <span>Color Grading</span>
+                            <span>Sound Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 10 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%);">
+                            <span class="project-icon">🎨</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="project-tag">Web</span>
+                                <span class="project-tag">Portfolio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Artist Portfolio</h3>
+                        <p>Portfolio créatif pour artiste avec galerie photo immersive</p>
+                        <div class="project-tech">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>WebGL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 11 -->
+                <div class="project-card" data-category="mobile ecommerce">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);">
+                            <span class="project-icon">👗</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="project-tag">Mobile</span>
+                                <span class="project-tag">Fashion</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>StyleApp</h3>
+                        <p>App shopping mode avec essayage virtuel AR</p>
+                        <div class="project-tech">
+                            <span>Swift</span>
+                            <span>ARKit</span>
+                            <span>CoreML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 12 -->
+                <div class="project-card" data-category="software">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);">
+                            <span class="project-icon">📚</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="project-tag">Logiciel</span>
+                                <span class="project-tag">Education</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>EduManage</h3>
+                        <p>Système de gestion scolaire complet avec portail parents/élèves</p>
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                            <span>Vue.js</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-box">
+                   <p>plus<div class="stat-number" data-target="150">0</div></p> 
+                    <div class="stat-label">Projets Réalisés</div>
+                </div>
+               
+                <div class="stat-box">
+                  <p>plus<div class="stat-number" data-target="5">0</div></p>  
+                    <div class="stat-label">Années d'Expérience</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">% Taux de Succès</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt à Lancer Votre Projet ?</h2>
+                <p>Rejoignez nos clients satisfaits et donnez vie à vos idées</p>
+                <a href="https://t.me/Anes546" class="btn btn-primary btn-large">Contactez-Nous</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">WebCraft</span>
+                    </div>
+                    <p>Votre partenaire digital pour des solutions innovantes et performantes.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61587447021759" class="social-link">Facebook</a>
+                     
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Développement Web</a></li>
+                        <li><a href="services.html">Apps Mobile</a></li>
+                        <li><a href="services.html">Logiciels</a></li>
+                        <li><a href="services.html">Montage Vidéo</a></li>
+                        <li><a href="services.html">E-commerce</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li>📧 anesanes232316@gmail.com</li>
+                        <li>📞 +213 0670715606</li>
+                        <li>📍 Alger Algérie</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 WebCraft. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
